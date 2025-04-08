@@ -23,8 +23,7 @@ public:
     bool create(const WindowDesc& desc, EventQueue& eventQueue);
 
     void close();
-
-  protected:
+    
     xcb_connection_t* mConnection = nullptr;
     xcb_screen_t* mScreen = nullptr;
     unsigned mXcbWindowId = 0;
